@@ -14,12 +14,6 @@ body {
     font-size: 16px;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -60,4 +54,34 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
 	background-size: cover;
+  position: relative;
+  
+}
+
+header h1 {
+  font-family: droid-serif,serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  color: white;
+  
+  
+}
+
+header h2 {
+  
+  font-family: $font-menu;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 75px;
+  color: white;
+}
+
+
+.splash-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
