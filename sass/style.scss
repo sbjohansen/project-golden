@@ -1,5 +1,7 @@
 /*VARIABLES*/
-$font-menu: 'Montserrat', sans-serif;
+$font-one: 'Montserrat', sans-serif;;
+$font-two: droid-serif, serif;
+$font-three: 'Roboto Slab', serif;
 
 
 /*GLOBAL*/
@@ -14,19 +16,37 @@ body {
     font-size: 16px;
 }
 
-.section {
+section {
   padding-top: 96px;
   padding-bottom: 96px;
   
 }
 
+.section-title h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #222222;
+  font-family: $font-one,serif;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.section-title h2 {
+  font-size: 16px;
+  text-align: center;
+  color: #777777;
+  font-style: italic;
+  font-family: $font-two;
+  margin-bottom: 55px;
+}
+
 /*NAVBAR*/
 
 .navbar {
-  display: inline-flex;
+  display: flex;
 }
 
-.nav-brand {
+.nav-logo {
   padding: 30px 20px;
   color: yellow;
 }
@@ -46,16 +66,20 @@ body {
 
 .navbar li {
   margin-right: 50px;
-  font-family: $font-menu;
+  font-family: $font-one;
 }
 
 header {
   background: url(/images/splash.png);
   height: 100vh;
-  background-repeat: no-repeat;
-	background-size: cover;
+  background-size: cover;
   position: relative;
    
+}
+
+header img {
+  height: 100%;
+  object-fit: cover;
 }
 
 header:before {
@@ -70,7 +94,7 @@ header:before {
 }
 
 header h1 {
-  font-family: droid-serif,serif;
+  font-family: $font-two,serif;
   font-weight: 400;
   font-style: italic;
   font-size: 40px;
@@ -81,7 +105,7 @@ header h1 {
 
 header h2 {
   
-  font-family: $font-menu;
+  font-family: $font-one;
   font-weight: 700;
   font-style: bold;
   font-size: 75px;
@@ -105,7 +129,7 @@ header h2 {
   margin: 24px auto 0 auto;
   padding: 24px;
   border-radius: 5px;
-  font-family: $font-menu;
+  font-family: $font-one;
   font-size: 18px;
   font-style: bold;
   text-align: center;
@@ -120,4 +144,80 @@ header h2 {
   color: white;
   
   
+}
+
+.services {
+  justify-items: center;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.services h3 {
+  margin: 20px auto 0 auto;
+  color: #222222;
+  font-family: $font-one;
+  font-size: 18px;
+}
+
+.services p {
+  color: #777777;
+  font-size: 14px;
+  font-family: $font-three;
+}
+
+.services img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.wrapper {
+  justify-items: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 767px ) {
+
+  .navbar ul{
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+        
+  }
+
+  .navbar li {
+    padding: 10px;
+    z-index: 100;
+  }
+
+
+  header h1 {
+    margin-top: 150px;
+    font-family: $font-two,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3vh;
+    color: white;
+    
+    
+  }
+  
+  header h2 {
+    
+    font-family: $font-one;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 6vh;
+    color: white;
+  }
+
+  .splash-inner {
+    flex-direction: column;
+  }
 }
