@@ -73,6 +73,9 @@ section {
   font-family: $font-one;
 }
 
+
+/*HEADER/SPLASH*/
+
 header {
   background: url(/images/splash.png);
   height: 100vh;
@@ -150,6 +153,9 @@ header h2 {
   
 }
 
+
+/*OUR SERVICES*/
+
 .services {
   justify-items: center;
   text-align: center;
@@ -181,49 +187,7 @@ header h2 {
 }
 
 
-
-
-
-
-@media (max-width: 967px ) {
-
-  .navbar ul{
-    font-size: 20px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-        
-  }
-
-  .navbar li {
-    padding: 10px;
-    z-index: 100;
-  }
-
-
-  header h1 {
-    margin-top: 150px;
-    font-family: $font-two,serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 3vh;
-    color: white;
-    
-    
-  }
-  
-  header h2 {
-    
-    font-family: $font-one;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 6vh;
-    color: white;
-  }
-
-  .splash-inner {
-    flex-direction: column;
-  }
-}
+/*PORTFOLIO*/
 
 .portf-item {
   justify-content: center;
@@ -262,6 +226,8 @@ header h2 {
   font-weight: 600;
 }
 
+
+/*FOOTER*/
 
 footer {
   margin: 30px 0;
@@ -324,3 +290,43 @@ footer ul li {
   padding: 6px;
 }
   
+
+@media (max-width: 967px ) {
+
+  .navbar ul{
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+        
+  }
+
+  .navbar li {
+    padding: 10px;
+    z-index: 100;
+  }
+
+
+  header h1 {
+    margin-top: 150px;
+    font-family: $font-two,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3vh;
+    color: white;
+    
+    
+  }
+  
+  header h2 {
+    
+    font-family: $font-one;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 6vh;
+    color: white;
+  }
+
+  .splash-inner {
+    flex-direction: column;
+  }
+}
