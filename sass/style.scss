@@ -261,3 +261,66 @@ header h2 {
   color: #777777;
   font-weight: 600;
 }
+
+
+footer {
+  margin: 30px 0;
+  text-align: center;
+  justify-content: center; 
+}
+
+.copyright {
+  font-family: $font-one;
+  color: #555555;
+  padding: 10px;
+}
+
+footer ul li {
+  display: inline-flex; 
+}
+
+
+.fb-color {
+  width:40px;
+  height:40px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #3b5998;
+  color: white;
+  text-align: center;
+  padding: 6px;
+}
+
+.tw-color {
+  width:40px;
+  height:40px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #00aced;
+  color: white;
+  text-align: center;
+  padding: 6px;
+}
+
+.pin-color {
+  width:40px;
+  height:40px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #cb2028;
+  color: white;
+  text-align: center;
+  padding: 6px;
+}
+
+.gplus-color {
+  width:40px;
+  height:40px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #da2713;
+  color: white;
+  text-align: center;
+  padding: 6px;
+}
+  
