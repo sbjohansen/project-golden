@@ -1,0 +1,59 @@
+/*GLOBAL*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  
+}
+
+/*NAVBAR*/
+
+.navbar {
+  display: inline-flex;
+}
+
+.nav-brand {
+  padding: 30px 20px;
+  color: yellow;
+}
+
+.navbar ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px 0px;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li {
+  margin-right: 50px;
+  
+}
+
+header {
+  background: url(/images/splash.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
